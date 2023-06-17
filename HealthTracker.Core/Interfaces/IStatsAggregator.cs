@@ -1,6 +1,8 @@
+using HealthTracker.Core.Models;
+
 namespace HealthTracker.Core.Interfaces;
 
-public interface IStatsAgregator
+public interface IStatsAggregator
 {
-    
+    Task<Stats> GetStatsAsync(DateTimeOffset from, DateTimeOffset to);
 }
